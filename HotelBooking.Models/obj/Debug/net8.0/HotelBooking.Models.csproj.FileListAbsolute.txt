@@ -1,0 +1,16 @@
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\bin\Debug\net8.0\HotelBooking.Models.deps.json
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\bin\Debug\net8.0\HotelBooking.Models.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\bin\Debug\net8.0\HotelBooking.Models.pdb
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.AssemblyInfo.cs
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.sourcelink.json
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\refint\HotelBooking.Models.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.pdb
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\ref\HotelBooking.Models.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBooking.Models.csproj.AssemblyReference.cache
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\bin\Debug\net8.0\HotelBooking.Utilities.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\bin\Debug\net8.0\HotelBooking.Utilities.pdb
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Models\obj\Debug\net8.0\HotelBoo.FA410782.Up2Date

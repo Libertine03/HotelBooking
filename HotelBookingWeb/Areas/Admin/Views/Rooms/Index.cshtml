@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Room>
+@{
+	ViewData["Title"] = "Администрирование номеров";
+}
+
+<div class="card bg-info rounded-5">
+	<div class="card-header text-white text-center">
+		<h2>Список комнат данного отеля</h2>
+	</div>
+	<div class="card-body bg-white rounded-5">
+		<div class="row">
+			<div class="col-12 text-end pb-3">
+				<a class="btn btn-primary" asp-area="Admin" asp-controller="Rooms" asp-action="Upsert" asp-route-hotelId="@ViewBag.hotelId"><i class="bi bi-plus-square"></i> Добавить комнату</a>
+			</div>
+		</div>
+		<table id="roomsTable" class="table table-bordered table-striped text-center" style="width: 100%; border-radius: 10px; vertical-align: middle;">
+			<thead>
+				<tr>
+					<th class="text-center">Название комнаты</th>
+					<th class="text-center">Цена</th>
+					<th class="text-center">Теги</th>
+					<th class="text-center">
+						Редактирование / Удаление
+					</th>
+				</tr>
+			</thead>
+ 			<tbody>
+				@foreach (var room in Model)
+				{
+					<tr>
+						<td>@room.RoomName</td>
+						<td>@room.Price</td>
+						<td>@room.Tags[0]</td>
+						<td>
+							<a asp-area="Admin" asp-controller="Rooms" asp-action="Upsert" asp-route-id="@room.Id" class="btn btn-info mx-2">Редактировать</a>
+							<a onClick="Delete('/admin/rooms/delete/@room.Id')" class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i></a>
+						</td>
+					</tr>
+				}
+			</tbody> 
+		</table>
+	</div>
+</div>
+
+@section Scripts {
+	<script src="~/js/Hotel.js"></script>
+}

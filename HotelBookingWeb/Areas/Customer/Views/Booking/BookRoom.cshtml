@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BookedRoom>
+@{
+	ViewData["Title"] = "Ваши брони";
+}
+
+@if(Model != null && Model.Count() > 0)
+{
+	<h1 class="text-center">Список забронированных номеров </h1>
+	@foreach (var br in Model)
+	{
+		<div class="card col-4 bg-info">
+			<div class="card-body text-center m-0">
+				<div class="bg-white rounded-1 shadow">
+					<span style="text-align: justify; font-weight: 500; font-size: 25px;">Забронированный номер: 
+						<span class="text-success">'@br.RoomTitle'</span>
+					</span>
+				</div>
+
+				<div class="bg-white rounded-1 mt-2 shadow">
+					<span style="text-align: justify; font-weight: 500; font-size: 25px;">
+						Дата въезда:
+						<span class="text-success">'@br.ArrivalDate'</span>
+					</span>
+					<span style="text-align: justify; font-weight: 500; font-size: 25px;">
+						Дата выезда:
+						<span class="text-success">'@br.DepartureDate'</span>
+					</span>
+				</div>
+
+				<div class="bg-white rounded-1 mt-2 shadow">
+					<span style="text-align: justify; font-weight: 500; font-size: 25px;">
+						Количество человек на заселение:
+						<span class="text-success">'@br.NumOfResidents'</span>
+					</span>
+				</div>
+
+				<div class="col-12 mt-2">
+					<a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@br.hotelId" class="btn btn-primary" style="display: block; width: 100%;">
+						Перейти к отелю
+					</a>
+				</div>
+			</div>
+		</div>
+
+	}
+}
+else
+{
+	<h1 class="text-center">Вы пока не бронировали номера или не вошли в аккаунт</h1>
+}

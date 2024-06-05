@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Hotel>
+@{
+	ViewData["Title"] = "Администрирование отелей";
+}
+
+<div class="card bg-info rounded-5">
+	<div class="card-header text-white text-center">
+		<h2>Список отелей</h2>
+	</div>
+	<div class="card-body bg-white rounded-5">
+		<div class="row">
+			<div class="col-12 text-end pb-3">
+				<a class="btn btn-primary" asp-area="Admin" asp-controller="Hotels" asp-action="Upsert"><i class="bi bi-plus-square"></i> Добавить отель</a>
+			</div>
+		</div>
+		
+		<table id="tblData" class="table table-bordered table-striped text-center" style="width: 100%; border-radius: 10px; vertical-align: middle;">
+			<thead>
+				<tr>
+					<th class="text-center">Название</th>
+					<th class="text-center">Страна</th>
+					<th class="text-center">Город</th>
+					<th class="text-center">Улица</th>
+					<th class="text-center">
+						Редактирование / Удаление
+					</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+</div>
+	
+@section Scripts {
+	<script src="~/js/Hotel.js"></script>
+}

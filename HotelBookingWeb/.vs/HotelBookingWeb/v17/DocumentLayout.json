@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pavli\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\HotelBooking\\HotelBookingWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A12C2509-821B-4870-AE16-0AFF6BFC03A9}|..\\HotelBooking.DataAccess\\HotelBooking.DataAccess.csproj|c:\\users\\pavli\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\hotelbooking\\hotelbooking.dataaccess\\data\\postgresdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostgresDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\HotelBooking\\HotelBooking.DataAccess\\Data\\PostgresDbContext.cs",
+              "RelativeDocumentMoniker": "..\\HotelBooking.DataAccess\\Data\\PostgresDbContext.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\HotelBooking\\HotelBooking.DataAccess\\Data\\PostgresDbContext.cs",
+              "RelativeToolTip": "..\\HotelBooking.DataAccess\\Data\\PostgresDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T09:39:44.391Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

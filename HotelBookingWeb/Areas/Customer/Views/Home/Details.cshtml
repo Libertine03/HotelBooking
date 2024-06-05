@@ -1,0 +1,120 @@
+﻿@model Hotel
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="col-12 d-flex mt-5 justify-content-center align-items-center">
+    <h2 class="text-dark" style="font-size: 3vw;">Отель "@Model.Name"</h2>
+</div>
+
+<div class="row mt-5 pt-2">
+    <div class="col-12 text-center">
+        @if(@Model.ImagesUrl != null && @Model.ImagesUrl.Count > 0) 
+        {
+            for(int i = 0; i < @Model.ImagesUrl.Count; i++) 
+            {
+                if(i == 0) 
+                {
+                    <img src="@Model.ImagesUrl[i]" class="rounded-3" style="height: 300px;" />
+                }
+                else 
+                {
+                    <img src="@Model.ImagesUrl[i]" class="rounded-3" style="max-width: 200px; max-height: 200px;" />
+                }
+            }
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 shadow pb-2 rounded-4 bg-white mt-3" style="min-height: 400px;">
+        <div class="text-center">
+            <span class="text-dark" style="font-weight: 500; font-size: 3vw;">Преимущества отеля</span>
+        </div>
+
+        <div class="row mt-1 text-center">
+            @foreach (var tag in Model.Tags)
+            {
+                <div class="row text-dark mt-3">
+                    <span style="font-size: 1.5vw; font-weight: 500; line-height: 0px;"><i class="bi bi-dot"></i> @tag.TagTitle</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="col-4 text-center">
+        <div class="shadow rounded-4 bg-white mt-3" style="min-height: 400px;">
+            <span class="text-dark" style="font-weight: 500; font-size: 3vw;">Описание<br /></span>
+
+            <span class="text-dark" style="font-weight: 500; font-size: 15px;">@Model.Description</span>
+        </div>
+    </div>
+
+    <div class="col-4 shadow rounded-4 bg-white mt-3 text-center" style="min-height: 400px;">
+        <span class="text-dark pt-1" style="font-size: 3vw; font-weight: 500;">КОНТАКТЫ</span>
+        <div class="col-12">
+            <span class="text-dark" style="font-size: 20px; font-weight: 500;">Номер телефона: <span class="text-warning">@Model.phoneNumber</span></span>
+        </div>
+
+        <div class="col-12">
+            <span class="text-dark" style="font-size: 20px; font-weight: 500;">Почта: <span class="text-warning">@Model.Email</span></span>
+        </div>
+
+        <div class="col-12">
+            <span class="text-dark" style="font-size: 20px; font-weight: 500;">Ссылка на сайт: <span class="text-warning">@Model.siteUrl</span></span>
+        </div>
+
+        <div class="col-12">
+            <span class="text-dark" style="font-size: 20px; font-weight: 500;">
+                Адрес:
+                <span class="text-info">
+                    <span>@Model.Country, @Model.City, @Model.Street <i class="bi bi-geo-alt"></i></span>
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row shadow rounded-4 pb-5 bg-white mt-3">
+    <span class="text-center text-dark pt-1" style="font-size: 3vw; font-weight: 500;">БРОНИРОВАНИЕ</span>
+    <div class="row">
+        @if (Model.Rooms != null)
+        {
+            foreach (var room in Model.Rooms)
+            {
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="slider">
+                                @foreach (var image in room.ImagesUrl)
+                                {
+                                    <img src="@image" />
+                                }
+                            </div>
+
+                            <h3 class="text-dark">
+                                @room.RoomName
+                            </h3>
+
+                            <h4 class="text-info">
+                                @room.Price.ToString("c")
+                            </h4>
+
+                            <a asp-area="Customer" asp-controller="Booking" asp-action="Index" asp-route-roomId="@room.Id"
+                               class="btn btn-info" style="font-size: 1.2vw;">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider();
+        });
+    </script>
+}
+

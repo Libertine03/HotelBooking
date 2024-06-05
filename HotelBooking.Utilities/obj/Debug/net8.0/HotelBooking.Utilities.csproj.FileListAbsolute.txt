@@ -1,0 +1,13 @@
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\bin\Debug\net8.0\HotelBooking.Utilities.deps.json
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\bin\Debug\net8.0\HotelBooking.Utilities.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\bin\Debug\net8.0\HotelBooking.Utilities.pdb
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.AssemblyInfo.cs
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.sourcelink.json
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\refint\HotelBooking.Utilities.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.pdb
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\ref\HotelBooking.Utilities.dll
+C:\Users\pavli\Desktop\Курсовая\HotelBooking\HotelBooking.Utilities\obj\Debug\net8.0\HotelBooking.Utilities.csproj.AssemblyReference.cache

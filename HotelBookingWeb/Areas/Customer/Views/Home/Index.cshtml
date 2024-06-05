@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Hotel>
+@{
+    ViewData["Title"] = "Отели";
+}
+
+<div class="div_searcher rounded-3 mt-5" style="padding-top: 15%; padding-bottom: 15%;">
+    <div class="bg-info test-start mx-5 p-1 rounded-3" style="display: inline-block;">
+        <h1 class="text-white">Поиск отелей по всему миру</h1>
+    </div>
+    <div class="px-5">
+        <div class="bg-info rounded-3">
+            <div class="row p-1">
+                <div class="col-10">
+                    <input type="text" id="searchInput" placeholder="Страна, город или название отеля" class="form-control border-0 shadow" />
+                </div>
+                <div class="col-2">
+                    <input type="button" id="searchButton" class="btn btn-info" value="Поиск" style="width:100%; display: block;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="hotelsBlock" style="margin-top: 10%;">
+    <h1 class="text-center">Список отелей</h1>
+    <div class="col-3 text-center bg-white rounded-2 pb-3" style="height: fit-content;">
+        <h3>Фильтрация данных</h3> 
+        <div style="display: grid; grid-template: auto; font-weight: 500;">
+            <div class="mt-3">
+                Сортировка 
+                <select id="orderBy" class="form-select border-0 shadow">
+                    <option>по убыванию цены</option>
+                    <option>по возрастанию цены</option>
+                </select>
+            </div>
+
+            <div class="mt-3">
+                Ценовой диапазон
+                <div class="row">
+                    <div class="col-6">
+                        <input type="number" id="minPriceValue" step="0.01" class="form-control border-0 shadow" placeholder="От" />
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="maxPriceValue" step="0.01" class="form-control border-0 shadow" placeholder="До" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                Теги
+                 <select id="tags" class="form-select border-0 shadow" multiple>
+                    @foreach(var tag in ViewBag.TagsList)
+                    {
+                        <option>@tag.TagTitle</option>
+                    }
+                </select>
+            </div>
+            <div class="mt-3">
+                <input type="button" id="filterDataButton" class="btn btn-info" value="Сохранить" style="width:100%; display: block;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9 text-center mx-auto" id="hotelsList" name="hotelsList" >
+        @{await Html.RenderPartialAsync("HotelsPV", Model);}
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="~/js/Filtering.js"></script>
+    <script>
+        $('#searchButton').click(function () {
+            $.ajax({
+                url: '@Url.Action("HotelsSearch", "Home")',
+                type: "GET",
+                data: {
+                    searchString: $('#searchInput').val()
+                },
+                success: function(result) {
+                    $('#hotelsList').empty();
+                    $('#hotelsList').html(result);
+                    $('html, body').animate({
+                        scrollTop: $('#hotelsBlock').offset().top
+                    }, 'slow');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $('#filterDataButton').click(function () {
+            var selectedValues = $('#tags').find('option:selected').map(function () {
+                return $(this).val();   
+            }).get();
+
+            $.ajax({
+                url: '@Url.Action("FilterHotels", "Home")',
+                type: "GET",
+                data: {
+                    orderBy: $('#orderBy').val(),
+                    minPriceValue: $('#minPriceValue').val(),
+                    maxPriceValue: $('#maxPriceValue').val(),
+                    selectedTags: selectedValues.join(',')
+                },
+                success: function (result) {
+                    $('#hotelsList').empty();
+                    $('#hotelsList').html(result);
+                }
+            });
+        });
+    </script>
+}

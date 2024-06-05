@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HotelBookingWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HotelBookingWeb.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\Logo.png",
+      "PackagePath": "staticwebassets\\images\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\bg_main_page_searcher.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_main_page_searcher.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotel_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hotel_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\2ca95f7f-fc76-4aed-ac21-e0f78afdeb90.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\2ca95f7f-fc76-4aed-ac21-e0f78afdeb90.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\38038fd2-667a-49ac-810c-6192fabf3a43.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\38038fd2-667a-49ac-810c-6192fabf3a43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\4fa1d17a-0aae-4f9d-a27e-870f43d22ae2.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\4fa1d17a-0aae-4f9d-a27e-870f43d22ae2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\6db4a27e-ebee-490c-b019-669689b46933.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\6db4a27e-ebee-490c-b019-669689b46933.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\72024b17-b33e-4227-8d68-2ec8afa27569.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\72024b17-b33e-4227-8d68-2ec8afa27569.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\hotels\\ba4f2649-b909-4400-90ff-1cb86b7624c3.jpg",
+      "PackagePath": "staticwebassets\\images\\hotels\\ba4f2649-b909-4400-90ff-1cb86b7624c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\images\\null_image.png",
+      "PackagePath": "staticwebassets\\images\\null_image.png"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\js\\Filtering.js",
+      "PackagePath": "staticwebassets\\js\\Filtering.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\js\\Hotel.js",
+      "PackagePath": "staticwebassets\\js\\Hotel.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pavli\\Desktop\\Курсовая\\HotelBooking\\HotelBookingWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HotelBookingWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HotelBookingWeb.props",
+      "PackagePath": "build\\HotelBookingWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HotelBookingWeb.props",
+      "PackagePath": "buildMultiTargeting\\HotelBookingWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HotelBookingWeb.props",
+      "PackagePath": "buildTransitive\\HotelBookingWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

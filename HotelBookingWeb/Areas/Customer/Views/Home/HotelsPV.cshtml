@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Hotel>
+
+@if (ViewData["SearchString"] != null)
+{
+    <div class="card-header text-center bg-white shadow mb-2 rounded-3" style="font-weight: 500; font-size: 20px;">
+        <span class="text-warning">@ViewData["SearchString"]</span>
+    </div>
+}
+@foreach (Hotel hotel in Model)
+        {
+            <div class="card card-hotel mb-3 shadow-lg" style="min-width: 800px;">
+
+                <div class="card-body text-dark">
+
+                    <div class="row">
+
+                        <div class="col-3">
+                            <div class="img-text-hotel">
+                                @if (hotel.ImagesUrl != null && hotel.ImagesUrl.Count > 0)
+                                {
+                                    <img src="@hotel.ImagesUrl[0]" class="rounded-2" style="width: 250px; height: 150px;" />
+                                }
+                                else
+                                {
+                                    <img src="~/images/null_image.png" class="rounded-2" style="width: 200px; height: 150px;" />
+                                }
+                            </div>
+                        </div>
+
+                        <div class="col-6 px-4">
+                            <div class="px-2">
+                                    <h3 class="text-dark text-start m-0">@hotel.Name</h3>
+                                    <h5 class="text-start text-dark"  style="font-weight: 300;">@hotel.Country, @hotel.City</h5>
+                                    @for (int i = 0; i < hotel.Tags.Count; i++)
+                                    {
+                                        <h6 class="text-dark text-start m-0" style="font-weight: 200;"><i class="bi bi-dot"></i>@hotel.Tags[i].TagTitle</h6>
+                                    }
+                                    <h3 class="text-dark text-start pt-2" style="font-size: 15px; font-weight: 500;">Минимальная цена за комнату: 
+                                        <span class="text-success">@hotel.minPriceForRoom.ToString("c")</span>
+                                    </h3>
+                            </div> 
+                        </div>
+
+                        <div class="col-3">
+                            <div style="display: grid; grid-template-columns: auto; grid-template-rows: auto auto; align-items: center; justify-content: center; grid-row-gap:revert;">
+                                <div style="position: absolute; top: 5px; right: 5px;">
+                                    <h3 class="text-dark text-end">@(hotel.Rating == null ? "-" : hotel.Rating)<i class="bi bi-star-fill"></i></h3>
+                                </div>
+
+                                <div style="position: absolute; bottom: 10px; right: 10px;">
+                                    <a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@hotel.Id" class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        }

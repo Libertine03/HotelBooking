@@ -1,0 +1,97 @@
+﻿@model Room
+
+<div class="row" style="position: relative;">
+	<div class="col-3">
+		<div class="card bg-info rounded-5">
+			<div class="card-header text-center text-white">
+				Изображения номера
+			</div>
+			<div class="card-body bg-white rounded-5 mb-2 text-center" id="ImagesDiv">
+				@if(Model.ImagesUrl != null && Model.ImagesUrl.Count > 0)
+				{
+					foreach (var imgUrl in Model.ImagesUrl)
+					{
+						<img src="@imgUrl" width="85%" style="border-radius:5px; border: 3px solid black" class="mt-1" />
+					}
+				}
+			</div>
+		</div>
+	</div>
+	<div class="col-9">
+		<div class="card bg-info rounded-5"@*  style="width: 80%; position: center; left: 20%;" *@>
+			<div class="card-header text-center text-white">
+				<h2 class="text-dark">@(Model.Id == 0 ? "Добавление" : "Редактирование") номера в отелe</h2>
+			</div>
+			<div class="card-body bg-white rounded-5 mb-2">
+				<div class="row">
+					<form method="post" class="row" enctype="multipart/form-data">
+						<input asp-for="Id" hidden />
+						<input asp-for="HotelId" hidden />
+						@if (Model.ImagesUrl != null)
+						{
+							for (int i = 0; i < Model.ImagesUrl.Count; i++)
+							{
+								<input asp-for="@Model.ImagesUrl[i]" hidden />
+							}
+						}
+
+						<div class="form-floating py-3 col-12">
+							<input asp-for="RoomName" class="form-control border-0 shadow" placeholder="" />
+							<label asp-for="RoomName" class="ms-2"></label>
+							<span asp-validation-for="RoomName" class="text-danger"></span>
+						</div>
+
+						<div class="form-floating py-3 col-12">
+							<input type="number" step="0.1" asp-for="Price" class="form-control border-0 shadow" placeholder="" />
+							<label asp-for="Price" class="ms-2"></label>
+							<span asp-validation-for="Price" class="text-danger"></span>
+						</div>
+
+						<div class="form-floating py-3 col-12">
+							<input asp-for="Tags" class="form-control border-0 shadow" placeholder="" />
+							<label asp-for="Tags" class="ms-2"></label>
+							<span asp-validation-for="Tags" class="text-danger"></span>
+						</div>
+
+						<div class="row" id="Images">
+							<div class="form-floating py-3 col-6">
+								<input type="file" name="files" id="files" multiple class="form-control border-0 shadow" />
+								<label asp-for="ImagesUrl" class="ms-2"></label>
+							</div>
+							<div class="col-4 mt-3">
+								<span class="text-start">Выберите одно или несколько изображений (не более 5)</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Добавить" : "Сохранить")</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+
+	<script type="text/javascript">
+		$("#files").change(function () {
+			showImagePreview(this);
+		});
+
+		function showImagePreview(input) {
+			if (input.files && input.files.length > 0) {
+				for (var i = 0; i < input.files.length; i++) {
+					var reader = new FileReader();
+					$('#ImagesDiv').empty();
+					reader.onload = function (e) {
+						$('#ImagesDiv').attr('src', e.target.result);
+						$('#ImagesDiv').append($('<img>', { src: e.target.result, width: '85%', height: '85%' }));
+					}
+					reader.readAsDataURL(input.files[i]);
+				}
+			}
+		}
+	</script>
+}

@@ -1,0 +1,222 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.div_searcher {
+    background-image: url(/images/bg_main_page_searcher.jpg);
+    background-size: 100% 100%;
+}
+body {
+    font-family: 'Blogger Sans', sans-serif;
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: white;
+    width: 95%;
+    left: 1.45%;
+}
+
+.nav-link {
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.nav-link, td {
+    font-weight: 300;
+}
+
+    .nav-link:hover {
+        background-color: #D9E3F1;
+    }
+
+.navbar-brand {
+    font-size: 30px;
+    border-radius: 22px;
+    transition: background-color 0.5s;
+    font-weight: bold;
+}
+
+    .navbar-brand:hover {
+        background-color: #d3d3f2;
+    }
+
+footer, .btn {
+    background-color: white;
+}
+
+header {
+    min-width: 1064px;
+}
+
+.header-main {
+    margin-top: 10px;
+    width: 95%;
+    height: fit-content;
+    border-radius: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.navigation-header {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 1fr;
+    justify-items: center; /* горизонтальное выравнивание по центру */
+    align-items: center; /* вертикальное выравнивание по центру */
+}
+
+.header-logo {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navigation-header .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.registration-header {
+    display: grid;
+    grid-template-columns: 0.97fr;
+    grid-template-rows: 1fr;
+    justify-items: end; /* горизонтальное выравнивание по центру */
+    align-items: center; /* вертикальное выравнивание по центру */
+}
+
+.registration-header a{
+    font-size: 20px;
+}
+
+    .registration-header .bi-person-square {
+        font-size: 30px;
+    }
+
+.card {
+    font-family: 'Blogger Sans', sans-serif;
+}
+
+.card-hotel {
+    transition: transform .3s;
+    background-image: url(/images/hotel_bg.jpg);
+    background-size: 100% 100%;
+}
+
+    .card-hotel:hover {
+        transform: scale(1.01);
+        transition: transform .3s;
+    }
+.btn-primary {
+    background-color: #BDECB6;
+    color: black;
+    border-radius: 5px;
+}
+    .btn-primary:hover {
+        background-color: #89AC76;
+        color: white;
+    }
+    .btn-primary:hover:active {
+        background-color: #1E5945;
+    }
+
+.btn-info {
+    background-color: #78DBE2;
+    color:black;
+    border-radius:  5px;
+}
+
+    .btn-info:hover {
+        background-color: #42AAFF;
+        color: white;
+    }
+
+        .btn-info:hover:active {
+            background-color: #6A5ACD;
+        }
+
+.btn-danger {
+    background-color: #CD5C5C;
+    color: black;
+    border-radius: 5px;
+}
+
+    .btn-danger:hover {
+        background-color: #C41E3A;
+        color: white;
+    }
+
+        .btn-danger:hover:active {
+            background-color: #960018;
+        }
+.btn-success {
+    border-radius: 5px;
+}
+
+.img-text-hotel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: start;
+}
+
+/* —тили дл€ текстового пол€ с кнопкой "ƒалее" */
+.limiter {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .limiter .bottom {
+        position: absolute; /* ≈сли прыгает - можно попробовать sticky */
+        bottom: 0;
+        background: linear-gradient( to bottom, rgb(255 217 29 / 0%), rgb(255 217 29)90%);
+        width: 100%;
+        height: 60px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+.read-more-checker {
+    opacity: 0;
+    position: absolute;
+}
+
+    .read-more-checker:checked ~ .limiter {
+        max-height: none;
+    }
+
+        .read-more-checker:checked ~ .limiter .bottom {
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+    .read-more-checker ~ .read-more-button:before {
+        content: "";
+    }
+
+    .read-more-checker:checked ~ .read-more-button:before {
+        content: "";
+    }
+
+.read-more-button {
+    cursor: pointer;
+    display: inline-block;
+    color: #777;
+    text-decoration: underline;
+}

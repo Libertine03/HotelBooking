@@ -1,0 +1,40 @@
+﻿@model Tag
+@{
+	ViewData["Title"] = "Добавление";
+}
+
+<div class="row" style="position: relative; margin-left: 32%;">
+	<div class="col-sm-6">
+		<div class="row">
+			<div class="card bg-info rounded-5">
+				<div class="card-header text-center text-white">
+					<h2>Редактирование тега</h2>
+				</div>
+				<div class="card-body bg-white rounded-5 mb-2">
+					<div class="row">
+						<form method="post" class="row">
+							<div class="rounded-2">
+
+								<div class="form-floating py-3 col-12">
+									<input asp-for="TagTitle" class="form-control border-0 shadow" placeholder="" />
+									<label asp-for="TagTitle" class="ms-2"></label>
+									<span asp-validation-for="TagTitle" class="text-danger"></span>
+								</div>
+
+								<button type="submit" class="btn btn-primary">Редактировать</button>
+								<a class="btn btn-info" asp-area="Admin" asp-controller="Tags" asp-action="Index">Вернуться</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	@{
+			<partial name="_ValidationScriptsPartial" />
+	}
+}

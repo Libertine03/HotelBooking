@@ -1,0 +1,145 @@
+﻿@model HotelVM
+@{
+	ViewData["Title"] = "Добавление";
+}
+
+<div class="row">
+	<div class="col-9">
+		<div class="row" style="position: relative;">
+			<div class="card bg-info rounded-5" style="width: 80%; position: center; left: 20%;">
+				<div class="card-header text-center text-white">
+					<h2>@(Model.Hotel.Id == 0 ? "Добавление" : "Редактирование") отеля</h2>
+				</div>
+				<div class="card-body bg-white rounded-5 mb-2">
+					<div class="row">
+						<form method="post" class="row" enctype="multipart/form-data">
+							<input asp-for="Hotel.Id" hidden />
+							@if (Model.Hotel.ImagesUrl != null)
+							{
+								for (int i = 0; i < Model.Hotel.ImagesUrl.Count; i++)
+								{
+									<input asp-for="@Model.Hotel.ImagesUrl[i]" hidden />
+								}
+							}
+
+							<div class="rounded-2">
+
+								<div class="form-floating py-3 col-12">
+									<input asp-for="Hotel.Name" class="form-control border-0 shadow" placeholder="" />
+									<label asp-for="Hotel.Name" class="ms-2"></label>
+									<span asp-validation-for="Hotel.Name" class="text-danger"></span>
+								</div>
+
+								<div class="form-floating py-3 col-12">
+									<input asp-for="Hotel.Country" class="form-control border-0 shadow" placeholder="" />
+									<label asp-for="Hotel.Country" class="ms-2"></label>
+									<span asp-validation-for="Hotel.Country" class="text-danger"></span>
+								</div>
+
+								<div class="form-floating py-3 col-12">
+									<input asp-for="Hotel.City" class="form-control border-0 shadow" placeholder="" />
+									<label asp-for="Hotel.City" class="ms-2"></label>
+									<span asp-validation-for="Hotel.City" class="text-danger"></span>
+								</div>
+
+								<div class="form-floating py-3 col-12">
+									<input asp-for="Hotel.Street" class="form-control border-0 shadow" placeholder="" />
+									<label asp-for="Hotel.Street" class="ms-2"></label>
+									<span asp-validation-for="Hotel.Street" class="text-danger"></span>
+								</div>
+
+								<div class="row">
+									<div class="form-floating py-3 col-12">
+										<select asp-for="Hotel.TagsID" asp-items="@Model.Tags" class="form-select border-0 shadow">
+										</select>
+										<label asp-for="Hotel.TagsID" class="ms-2">Выберите теги</label>
+										<span asp-validation-for="Hotel.TagsID" class="text-danger"></span>
+									</div>
+								</div>
+
+								<div class="form-floating py-3 col-12">
+									<textarea asp-for="Hotel.Description" class="form-control border-0 shadow" placeholder=""></textarea>
+									<label asp-for="Hotel.Description" class="ms-2"></label>
+									<span asp-validation-for="Hotel.Description" class="text-danger"></span>
+								</div>
+
+								<div class="row">
+									<div class="form-floating py-3 col-4">
+										<input asp-for="Hotel.phoneNumber" class="form-control border-0 shadow" placeholder="" />
+										<label asp-for="Hotel.phoneNumber"></label>
+									</div>
+
+									<div class="form-floating py-3 col-4">
+										<input asp-for="Hotel.Email" class="form-control border-0 shadow" placeholder="" />
+										<label asp-for="Hotel.Email"></label>
+									</div>
+
+									<div class="form-floating py-3 col-4">
+										<input asp-for="Hotel.siteUrl" class="form-control border-0 shadow" placeholder="" />
+										<label asp-for="Hotel.siteUrl"></label>
+									</div>
+								</div>
+
+								<div class="row" id="Images">
+									<div class="form-floating py-3 col-6">
+										<input type="file" name="files" id="files" multiple class="form-control border-0 shadow" />
+										<label asp-for="Hotel.ImagesUrl" class="ms-2"></label>
+									</div>
+									<div class="col-4 mt-3">
+										<span class="text-start">Выберите одно или несколько изображений (не более 5)</span>
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-primary">@(Model.Hotel.Id == 0 ? "Добавить" : "Обновить")</button>
+								<a class="btn btn-info" asp-area="Admin" asp-controller="Hotels" asp-action="Index">Вернуться</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-3">
+		<div class="card bg-info rounded-5">
+			<div class="card-header text-center text-white">
+				@(Model.Hotel.ImagesUrl == null ? "Превью загружаемых изображений" : "Загруженные изображения")
+			</div>
+			<div class="card-body bg-white rounded-5 mb-2 text-center" id="ImagesDiv">
+				@if (Model.Hotel.ImagesUrl != null)
+				{
+					@foreach (var imgUrl in @Model.Hotel.ImagesUrl)
+					{
+						<img src="@imgUrl" width="85%" style="border-radius:5px; border: 3px solid black" class="mt-1" />
+					}
+				}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	@{
+			<partial name="_ValidationScriptsPartial" />
+	}
+
+	<script type="text/javascript">
+		$("#files").change(function () {
+			showImagePreview(this);
+		});
+
+		function showImagePreview(input) {
+			if (input.files && input.files.length > 0) {
+				for (var i = 0; i < input.files.length; i++) {
+					var reader = new FileReader();
+					$('#ImagesDiv').empty();
+					reader.onload = function (e) {
+						$('#ImagesDiv').attr('src', e.target.result);
+						$('#ImagesDiv').append($('<img>', { src: e.target.result, width: '85%', height: '85%' }));
+					}
+					reader.readAsDataURL(input.files[i]);
+				}
+			}
+		}
+	</script>
+}

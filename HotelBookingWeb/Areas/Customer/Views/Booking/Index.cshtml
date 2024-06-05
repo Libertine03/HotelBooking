@@ -1,0 +1,51 @@
+﻿@model BookedRoom
+@{
+	ViewData["Title"] = "Бронирование";
+}
+
+<div class="row">
+	<div class="col-xl-12">
+		<div class="card bg-white">
+			<div class="card-header">
+				Бронирование
+			</div>
+			<div class="card-body">
+				<form method="post">
+					<input asp-for="userId" hidden />
+					<input asp-for="RoomTitle" hidden />
+					<input asp-for="hotelId" hidden />
+					<div class="form-floating py-3 col-12">
+						<input asp-for="RoomTitle" disabled class="form-control border-0 shadow" placeholder="" />
+						<label asp-for="RoomTitle" class="ms-2"></label>
+					</div>
+
+					<div class="form-floating py-3 col-12">
+						<input asp-for="NumOfResidents" class="form-control border-0 shadow" placeholder="" />
+						<label asp-for="NumOfResidents" class="ms-2"></label>
+						<span asp-validation-for="NumOfResidents" class="text-danger"></span>
+					</div>
+
+					<div class="form-floating py-3 col-12">
+						<input asp-for="ArrivalDate" class="form-control border-0 shadow" placeholder="" />
+						<label asp-for="ArrivalDate" class="ms-2"></label>
+						<span asp-validation-for="ArrivalDate" class="text-danger"></span>
+					</div>
+
+					<div class="form-floating py-3 col-12">
+						<input asp-for="DepartureDate" class="form-control border-0 shadow" placeholder="" />
+						<label asp-for="DepartureDate" class="ms-2"></label>
+						<span asp-validation-for="DepartureDate" class="text-danger"></span>
+					</div>
+					<button type="submit" class="btn btn-primary">Забронировать</button>
+					<a class="btn btn-info" onclick="goBack()">Вернуться</a>
+				</form>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<script>
+	function goBack() {
+		window.history.back();
+	}
+</script>

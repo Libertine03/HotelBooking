@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Tag>
+@{
+	ViewData["Title"] = "Администрирование тегов";
+}
+
+<div class="card bg-info rounded-5">
+	<div class="card-header text-white text-center">
+		<h2>Список тегов</h2>
+	</div>
+	<div class="card-body bg-white rounded-5">
+		<div class="row">
+			<div class="col-12 text-end pb-3">
+				<a class="btn btn-primary" asp-area="Admin" asp-controller="Tags" asp-action="Create"><i class="bi bi-plus-square"></i> Добавить тег</a>
+			</div>
+		</div>
+		
+		<table id="tblData" class="table table-bordered table-striped text-center" style="width: 100%; border-radius: 10px; vertical-align: middle;">
+			<thead>
+				<tr>
+					<th class="text-center">ID</th>
+					<th class="text-center">Тег</th>
+					<th class="text-center">
+						Редактирование / Удаление
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var tag in Model)
+				{
+					<tr>
+						<td>@tag.Id</td>
+						<td>@tag.TagTitle</td>
+						<td>
+							<a asp-area="Admin" asp-controller="Tags" asp-action="Edit" asp-route-id="@tag.Id" class="btn btn-info mx-2">Редактировать</a>
+							<a asp-area="Admin" asp-controller="Tags" asp-action="Delete" asp-route-id="@tag.Id" class="btn btn-danger mx-2">Удалить</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+	
